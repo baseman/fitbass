@@ -1,0 +1,141 @@
+@charset "utf-8";
+ 
+	
+/* ******************  Site CSS  ******************* */	
+
+img {border:0;}
+a { text-decoration:none; color:red; transition: all ease 0.3s; }
+a:hover { text-decoration:underline; color:#ff0000;}
+
+html { height: 100%; max-red: 100%; font-size: 62.5%; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+body { background:  #ffffff; margin:0; padding:0; text-align: center; color: #000000; height: 100%; max-height: 100%; font-family:Open Sans, "Trebuchet MS", Arial, Helvetica, sans-serif; letter-spacing: 0.01rem; font-size: 1.8rem; color: #3A4145; -webkit-font-feature-settings: 'kern' 1; -moz-font-feature-settings: 'kern' 1; -o-font-feature-settings: 'kern' 1; }
+p {font-size: 12px;}
+
+article,  aside,  figure,  footer,  header,  nav,  section  {display:block; margin:0; padding:0;}
+.clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+
+.hidden { text-indent: -9999px; visibility: hidden; display: none; }
+
+/** icons **/
+/* Import the font file with the icons in it */
+@font-face { font-family: "casper-icons"; src:url("../fonts/casper-icons.eot"); src:url("../fonts/casper-icons.eot?#iefix") format("embedded-opentype"), url("../fonts/casper-icons.woff") format("woff"), url("../fonts/casper-icons.ttf") format("truetype"), url("../fonts/casper-icons.svg#icons") format("svg"); font-weight: normal; font-style: normal; }
+/* Apply these base styles to all icons */
+[class^="icon-"]:before, [class*=" icon-"]:before { font-family: "casper-icons", "Open Sans", sans-serif; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; text-decoration: none !important; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+/* Each icon is created by inserting the correct character into the
+   content of the :before pseudo element. Like a boss. */
+.icon-ghost:before { content: "\f600"; }
+.icon-feed:before { content: "\f601"; }
+.icon-twitter:before { content: "\f602"; font-size: 1.1em; }
+.icon-google-plus:before { content: "\f603"; }
+.icon-facebook:before { content: "\f604"; }
+.icon-arrow-left:before { content: "\f605"; }
+.icon-stats:before { content: "\f606"; }
+.icon-location:before { content: "\f607"; margin-left: -3px; /* Tracking fix */ }
+.icon-link:before { content: "\f608"; }
+
+#SiteWrapper {}
+
+header {width:960px; margin:0 auto; height:200px;}
+header img {float:left; margin: 60px 0 0  0;}
+header input {float:right; margin:120px 0 0 0; padding:10px; border:1px #8c8c8c solid; font-family:Open Sans, "Trebuchet MS", Arial, Helvetica, sans-serif; font-size:13px; width:200px;}
+
+#MenuWrapper {background-color:#000; height:75px;}
+#Menu {width:960px; margin:0 auto;}
+#Menu ul {color:#ffffff; font-size:15px; text-transform:uppercase; margin:0; padding:30px 0 0 20px; width:780px;}
+#Menu ul li {float:left; margin:0; padding:0 0 0 20px; list-style-type:none; }
+#Menu ul li a {color:#ffffff;}
+#Menu ul li a:hover {color:#8c8c8c; text-decoration: none;}
+#MenuSocial {margin:25px 0 0 0; float:right; width:135px; text-align:right}
+#MenuSocial img {padding:0 0 0 10px;}
+
+#BodyWrapper {width:960px; margin:0 auto; padding:20px 0 0 0; }
+
+#MainCol {float:left; width:620px; margin:20px 0 20px 0;}
+
+.featured .PostContent { background-color:#000; height:400px; overflow:hidden; margin:0 0 40px 0;}
+.featured .PostPhoto {float:left; width:620px; height:400px; overflow:hidden;}
+.featured .PostPhoto img { width:620px;}
+.featured .PostCopyBox { float:right; width:270px; text-align:left; margin:0 30px 0 0; height:400px; color:#FFF;}
+.featured .PostCopyBox h1 { text-transform:uppercase; font-weight:normal; padding:40px 0 0 0; margin:0; font-size:25px;}
+.featured .PostCopyBox h4  {text-transform:uppercase; font-weight:normal; padding:5px 0 0 0; margin:0; font-size:11px;}
+.featured .PostCopy { height:145px; overflow:hidden;}
+.featured .PostCopyBox h5 {font-size:10px; text-transform:uppercase; font-weight:bold; color:#fff;}
+.featured .PostMeta { color: #fff; }
+
+.PostContent { height:200px; overflow:hidden; margin:0 0 40px 0;}
+.PostPhoto {float:left;}
+.PostPhoto img { width:270px; }
+.PostCopyBox { float:right; width:610px; text-align:left; }
+.PostCopyBox h1 { text-transform:uppercase; font-weight:normal; padding:10px 0 0 0; margin:0; font-size:20px;}
+.PostCopyBox h4  {text-transform:uppercase; font-weight:normal; padding:5px 0 0 0; margin:0; font-size:11px;}
+.PostCopy { height:50px; overflow:hidden;}
+.PostCopyBox h5 {font-size:10px; text-transform:uppercase; font-weight:bold; color:#000;}
+
+.PostMeta { display: block; margin: 1.75rem 0 0 0; font-family: "Open Sans", sans-serif; font-size: 1.5rem; line-height: 2.2rem; color: #9EABB3; }
+.PostDate { display: inline-block; margin-left: 8px; padding-left: 12px; border-left: #d5dbde 1px solid; text-transform: uppercase; font-size: 1.3rem; white-space: nowrap; }
+.AuthorThumb { width: 24px; height: 24px; float: left; margin-right: 9px; border-radius: 100%; }
+
+#BodyWrapper aside {float:right; width:300px; margin:30px 0 30px 0; }
+
+.SideTwitter {padding:0 0 10px 0; margin:0;}
+.SideTwitter {padding:0 0 10px 0; margin:0;}
+.SideAuthorWrapper { text-align:left;}
+.SideAuthorWrapper h1 {text-transform:uppercase; font-weight:normal; font-size:20px; margin:20px 0 20px 0; padding:0;}
+.SideAuthorWrapper { text-align:left; height:175px;}
+.SideAuthorPhoto {float:left; height:175px; width:100px;}
+.SideAuthorPhoto img {width:100px;}
+.SideAuthorCopy {float:right; text-align:left; width:175px; height:175px; overflow:hidden;}
+.SideAuthorCopy h2 {text-transform:uppercase; margin:0; padding:0 0 2px 0; font-weight:normal; font-size:12px; color:#868686;}
+.SideAuthorCopy p {margin:0; padding:0;} 
+
+#ArticleCol {float:left; width:620px; margin:20px 0 20px 0; text-align:left;}
+.ArticleWrapper { color:#000;} 
+.ArticleCopy {float:right; text-align:left;}
+.ArticleCopy { text-align:left; margin:0 20px 0 0;}
+.ArticleCopy P {padding:5px 0 5px 0; margin:0; font-size:12x; line-height:17px; }
+.ArticleCopy h1 { text-transform:uppercase; font-weight:normal; padding:20px 0 0 0; margin:0; font-size:30px;}
+.ArticleCopy h4  {text-transform:uppercase; font-weight:normal; padding:5px 0 10px 0; margin:0; font-size:11px; color:#868686;}
+.ArticleCopy h5 {font-size:10px; text-transform:uppercase; font-weight:bold; color:#000;}
+
+.ArticleFooter { position: relative; margin: 6rem 0 0 0; padding: 6rem 0 0 0; border-top: #EBF2F6 1px solid; }
+.ArticleFooter h4 { font-size: 1.8rem; margin: 0; }
+.ArticleFooter p { margin: 1rem 0; font-size: 1.4rem; line-height: 1.75em; }
+
+/* Create some space to the right for the share links */
+.ArticleFooter .Author { margin-right: 180px; }
+.ArticleFooter h4 a { color: #2e2e2e; text-decoration: none; }
+.ArticleFooter h4 a:hover { text-decoration: underline; }
+
+/* Drop the share links in the space to the right.
+   Doing it like this means it's easier for the author bio
+   to be flexible at smaller screen sizes while the share
+   links remain at a fixed width the whole time */
+.ArticleFooter .Share { position: absolute; top: 6rem; right: 0; width: 150px; }
+.ArticleFooter .Share a { font-size: 1.8rem; display: inline-block; margin: 1rem 1.6rem 1.6rem 0; }
+
+.AuthorMeta { margin: 1.6rem 0; }
+/* Location, website, and link */
+.AuthorMeta span { display: inline-block; margin: 0 2rem 1rem 0; word-wrap: break-word; }
+.AuthorMeta a { text-decoration: none; }
+
+.AuthorImage { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; display: block; position: absolute; top: -40px; left: 50%; margin-left: -40px; width: 80px; height: 80px; border-radius: 100%; overflow: hidden; padding: 6px; background: #fff; z-index: 2; box-shadow: #E7EEF2 0 0 0 1px; }
+.AuthorImage .img { position: relative; display: block; width: 100%; height: 100%; background-size: cover; background-position: center center; border-radius: 100%; }
+#ArticleSocial {float:right; margin:25px 0 0 0;}
+
+
+
+footer { background:#000; height:275px;}
+
+#FooterWrapper {width:960px; margin:0 auto; padding:20px 0 0 0; }
+#FooterCol {float:left; width:620px; padding:0 0 40px 0; text-align:left;}
+#FooterCol h1 {text-transform:uppercase; font-weight:normal; color:#fff; padding:10px 0 5px 0; margin:0; font-size:20px;}
+#FooterCol p { color:#686868; line-height:18px; padding: 0 0 10px 0; margin:0;}
+#FooterWrapper aside {float:right; width:300px; padding:10px 0 20px 0; text-align:left; }
+#FooterWrapper aside ul {color:#ffffff; font-size:14px; text-transform:uppercase; padding:10px 0 0 0; margin:0; }
+#FooterWrapper aside li { list-style-type:none; margin:0;}
+#FooterWrapper aside li a {color:#fff; text-decoration:none;}
+#FooterWrapper aside li a:hover {color:#8c8c8c; text-decoration:none;}
+
+#FooterSocial {color:#ffffff; margin:15px 0 0 0; }
+#FooterSocial a {color:#fff; text-decoration:none; padding:0 5px 0 0;}
+#FooterSocial a:hover {color:#8c8c8c; text-decoration:none;}

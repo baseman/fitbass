@@ -1,0 +1,61 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! Everything inside the #post tags pulls data from the post }}
+{{#post}}
+
+<main class="content" role="main">
+
+    <article class="{{post_class}}">
+
+        <section class="ArticleCopy">
+            <h1>{{title}}</h1>
+            {{content}}
+
+            <div class="ArticleFooter">
+
+                {{! Everything inside the #author tags pulls data from the author }}
+                {{#author}}
+
+                    {{#if image}}
+                        <figure class="AuthorImage">
+                            <a class="img" href="{{url}}" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></a>
+                        </figure>
+                    {{/if}}
+
+                    <section class="Author">
+                        <h4><a href="{{url}}">{{name}}</a></h4>
+
+                        {{#if bio}}
+                            <p>{{bio}}</p>
+                        {{else}}
+                            <p>Read <a href="{{url}}">more posts</a> by this author.</p>
+                        {{/if}}
+                        <div class="AuthorMeta">
+                            {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
+                            {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
+                        </div>
+                    </section>
+
+                {{/author}}
+
+                <section class="Share">
+                    <h4>Share this post</h4>
+                    <a class="social-button icon-facebook" href="{{@blog.url}}#">
+                        <span class="hidden">Facebook</span>
+                    </a>
+                    <a class="social-button icon-twitter" href="{{@blog.url}}#">
+                        <span class="hidden">Twitter</span>
+                    </a>
+                </section>
+
+            </div>
+        </section>
+
+    </article>
+
+</main>
+
+{{/post}}

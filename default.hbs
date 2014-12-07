@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    {{! Styles'n'Scripts }}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+
+    <section id="SiteWrapper">
+
+        {{!@blog.logo}}
+        {{!@blog.title}}
+        {{!@blog.description}}
+
+        <!--<menu id="Menu">-->
+            <!--<ul>-->
+                <!--<li>-->
+
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a class="icon-facebook" href="{{@blog.url}}#">-->
+                        <!--<span class="hidden">Facebook</span>-->
+                    <!--</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</menu>-->
+
+        <header class="clearfix">
+            <a href="{{@blog.url}}"><img src="{{@blog.cover}}"></a>
+        </header>
+
+        <section id="MenuWrapper" class="clearfix">
+            <menu id="Menu">
+                <ul>
+                    <li><a href="{{@blog.url}}#">recent</a></li>
+                    <li><a href="{{@blog.url}}#">feature</a></li>
+                    <li><a href="{{@blog.url}}#">about us</a></li>
+                    <li><a href="{{@blog.url}}#">contact us</a></li>
+                    <li>|</li>
+                    <li>
+                        <a class="icon-facebook" href="{{@blog.url}}#">
+                            <span class="hidden">Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="icon-twitter" href="{{@blog.url}}#">
+                            <span class="hidden">Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="icon-feed" style="text-decoration: none;" href="{{@blog.url}}/rss/">
+                            <span class="hidden">Subscribe</span>
+                        </a>
+                    </li>
+                </ul>
+            </menu>
+        </section>
+        <section id="BodyWrapper" class="clearfix">
+            {{! Everything else gets inserted here }}
+            {{{body}}}
+        </section>
+    </section>
+
+    <footer style="clear:both;">
+        <section id="FooterWrapper" class="clearfix">
+            <section id="FooterCol" class="clearfix">
+                <h1>About Us</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque bibendum arcu ut lacus laoreet, vitae blandit turpis vehicula. Vestibulum lectus nibh, iaculis eget eros at, fringilla convallis nisl. Sed viverra sem at felis aliquam, dignissim imperdiet nunc luctus. Praesent mollis vehicula leo, vel molestie tortor porttitor ac. Nulla tincidunt, risus sed auctor viverra, nulla augue dictum velit, sed hendrerit mi nisi quis quam. Sed eget tellus nec nibh eleifend mollis.</p>
+                <p>Sed viverra sem at felis aliquam, dignissim imperdiet nunc luctus. Praesent mollis vehicula leo, vel molestie tortor porttitor ac.</p>
+            </section>
+            <aside>
+                <a href="{{@blog.url}}"><img src="{{@blog.logo}}"></a>
+                <ul>
+                    <li><a href="{{@blog.url}}#">&gt;recent</a></li>
+                    <li><a href="{{@blog.url}}#">&gt;feature</a></li>
+                    <li><a href="{{@blog.url}}#">&gt;about us</a></li>
+                    <li><a href="{{@blog.url}}#">&gt;contact us</a></li>
+                </ul>
+                <section id="FooterSocial">
+                    <a class="icon-facebook" href="{{@blog.url}}#">
+                        <span class="hidden">Facebook</span>
+                    </a>
+                    <a class="icon-twitter" href="{{@blog.url}}#">
+                        <span class="hidden">Twitter</span>
+                    </a>
+                    <a class="icon-feed" style="text-decoration: none;" href="{{@blog.url}}/rss/">
+                        <span class="hidden">Subscribe</span>
+                    </a>
+                </section>
+            </aside>
+        </section>
+    </footer>
+
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+    {{! The main JavaScript file for Casper }}
+    <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+
+</body>
+</html>
