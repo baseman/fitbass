@@ -120,9 +120,17 @@ header input {float:right; margin:120px 0 0 0; padding:10px; border:1px #8c8c8c 
 
 .AuthorImage { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; display: block; position: absolute; top: -40px; left: 50%; margin-left: -40px; width: 80px; height: 80px; border-radius: 100%; overflow: hidden; padding: 6px; background: #fff; z-index: 2; box-shadow: #E7EEF2 0 0 0 1px; }
 .AuthorImage .img { position: relative; display: block; width: 100%; height: 100%; background-size: cover; background-position: center center; border-radius: 100%; }
+
+.AuthorContent { height:200px; overflow:hidden; margin:0 0 40px 0;}
+.AuthorPhoto {float:left;}
+.AuthorPhoto img { width:270px; }
+.AuthorCopyBox { float:right; width:610px; text-align:left; }
+.AuthorCopyBox h1 { text-transform:uppercase; font-weight:normal; padding:10px 0 0 0; margin:0; font-size:20px;}
+.AuthorCopyBox h4  {text-transform:uppercase; font-weight:normal; padding:5px 0 0 0; margin:0; font-size:11px;}
+.AuthorCopy { height:50px; overflow:hidden;}
+.AuthorCopyBox h5 {font-size:10px; text-transform:uppercase; font-weight:bold; color:#000;}
+
 #ArticleSocial {float:right; margin:25px 0 0 0;}
-
-
 
 footer { background:#000; height:275px;}
 
